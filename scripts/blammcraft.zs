@@ -10,15 +10,6 @@ furnace.addRecipe(<minecraft:iron_ingot> * 6, <minecraft:iron_door>);
 // Turn the deathnote into paper
 recipes.addShapeless(<minecraft:paper>, [<gravestone:death_info>]);
 
-// Modifying the Box of Eternal Closure for a game
-recipes.remove(<evilcraft:boxOfEternalClosure>);
-val potion = <minecraft:potion>;
-val weaknessPotion = potion.withTag({Potion:"minecraft:weakness"});
-recipes.addShaped(<evilcraft:boxOfEternalClosure>,
- [[<evilcraft:darkGemCrushed>, <evilcraft:darkPowerGem>, <evilcraft:darkGemCrushed>],
-  [weaknessPotion, <minecraft:ender_chest>, weaknessPotion],
-  [<evilcraft:darkGemCrushed>, <evilcraft:darkPowerGem>, <evilcraft:darkGemCrushed>]]);
-
 // Making spaghetti
 MetalPress.addRecipe(<tconstruct:spaghetti>, <ore:cropWheat>, <immersiveengineering:mold:2>, 500, 16);
 
