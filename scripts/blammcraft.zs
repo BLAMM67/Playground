@@ -1,4 +1,6 @@
 import mods.immersiveengineering.MetalPress;
+import mods.tconstruct.Smeltery;
+import mods.vanilla.HarvestLevel;
 
 
 // Make inksacs out of black dye and a fish since squids keep getting eaten
@@ -9,6 +11,9 @@ furnace.addRecipe(<minecraft:iron_ingot> * 6, <minecraft:iron_door>);
 
 // Turn the deathnote into paper
 recipes.addShapeless(<minecraft:paper>, [<gravestone:death_info>]);
+
+// Turn the Armor book into book
+recipes.addShapeless(<minecraft:book>, [<modifiable_armor:Modifiable Armor Book>]);
 
 // Making spaghetti
 MetalPress.addRecipe(<tconstruct:spaghetti>, <ore:cropWheat>, <immersiveengineering:mold:2>, 500, 16);
@@ -28,3 +33,24 @@ recipes.addShaped(<xreliquary:mob_ingredient:11>,
  [[<minecraft:ender_pearl>, <minecraft:ender_pearl>, <minecraft:ender_pearl>],
   [<minecraft:ender_pearl>, <xreliquary:mob_ingredient:6>, <minecraft:ender_pearl>],
   [<minecraft:ender_pearl>, <minecraft:ender_pearl>, <minecraft:ender_pearl>]]);
+
+// Cook NetherEx netherrack
+furnace.addRecipe(<minecraft:netherbrick>, <nex:netherrack>);
+furnace.addRecipe(<minecraft:netherbrick>, <nex:netherrack:1>);
+furnace.addRecipe(<minecraft:netherbrick>, <nex:netherrack:2>);
+
+//Increase harvest level of nether randomite to cobalt
+HarvestLevel.set(<randomore:BlockRandomiteOreNether>, "pickaxe", 4);
+
+// Let's make a use for the vanilla tools
+Smeltery.addMelting(<liquid:iron> * 144, <minecraft:iron_axe>.anyDamage(), 1000);
+Smeltery.addMelting(<liquid:iron> * 144, <minecraft:iron_hoe>.anyDamage(), 1000);
+Smeltery.addMelting(<liquid:iron> * 144, <minecraft:iron_pickaxe>.anyDamage(), 1000);
+Smeltery.addMelting(<liquid:iron> * 144, <minecraft:iron_shovel>.anyDamage(), 1000);
+Smeltery.addMelting(<liquid:iron> * 144, <minecraft:iron_sword>.anyDamage(), 1000);
+
+Smeltery.addMelting(<liquid:gold> * 144, <minecraft:golden_axe>.anyDamage(), 1000);
+Smeltery.addMelting(<liquid:gold> * 144, <minecraft:golden_hoe>.anyDamage(), 1000);
+Smeltery.addMelting(<liquid:gold> * 144, <minecraft:golden_pickaxe>.anyDamage(), 1000);
+Smeltery.addMelting(<liquid:gold> * 144, <minecraft:golden_shovel>.anyDamage(), 1000);
+Smeltery.addMelting(<liquid:gold> * 144, <minecraft:golden_sword>.anyDamage(), 1000);
