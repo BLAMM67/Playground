@@ -1,4 +1,5 @@
 import mods.immersiveengineering.MetalPress;
+import mods.tconstruct.Casting;
 import mods.tconstruct.Smeltery;
 import mods.vanilla.HarvestLevel;
 
@@ -54,3 +55,16 @@ Smeltery.addMelting(<liquid:gold> * 144, <minecraft:golden_hoe>.anyDamage(), 100
 Smeltery.addMelting(<liquid:gold> * 144, <minecraft:golden_pickaxe>.anyDamage(), 1000);
 Smeltery.addMelting(<liquid:gold> * 144, <minecraft:golden_shovel>.anyDamage(), 1000);
 Smeltery.addMelting(<liquid:gold> * 144, <minecraft:golden_sword>.anyDamage(), 1000);
+
+// Need a recipe for the Modifiable Armor springs
+recipes.addShaped(<modifiable_armor:Spring>,
+ [[<ore:ingotIron>, <ore:ingotIron>, null],
+  [null, <ore:ingotIron>, <ore:ingotIron>],
+  [<ore:ingotIron>, <ore:ingotIron>, null]]);
+
+// Integerate tin with the smeltery
+Smeltery.addMelting(<liquid:tin> * 288, <ore:oreTin>, 1000);
+Smeltery.addMelting(<liquid:tin> * 144, <ore:ingotTin>, 1000);
+Smeltery.addMelting(<liquid:tin> * 1296, <ore:blockTin>, 1000);
+Casting.addBasinRecipe(<chisel:blockTin>, <liquid:tin> * 1296, null, false, 100);
+Casting.addTableRecipe(<projectred-core:resource_item:101>, <liquid:tin> * 144, <tconstruct:cast_custom>, false, 40);
