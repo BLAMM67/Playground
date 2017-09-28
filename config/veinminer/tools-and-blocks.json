@@ -22,6 +22,8 @@
         "tconstruct:hatchet"
       ],
       "blocklist": [
+        "adinferos:leaves",
+        "adinferos:log",
         "evilcraft:undeadLog/0",
         "minecraft:fence",
         "minecraft:leaves",
@@ -221,6 +223,12 @@
         "tconstruct:pickaxe"
       ],
       "blocklist": [
+        "adinferos:dimensional_ore/0",
+        "adinferos:gold_ore/0",
+        "adinferos:netherite_ore/0",
+        "adinferos:peat_ore/0",
+        "adinferos:soul_ore/0",
+        "adinferos:wither_ore/0",
         "arsmagica2:ore/0",
         "arsmagica2:ore/1",
         "arsmagica2:ore/2",
@@ -287,6 +295,7 @@
         "roots:wood_shears"
       ],
       "blocklist": [
+        "adinferos:leaves",
         "minecraft:deadbush",
         "minecraft:leaves",
         "minecraft:leaves2",
