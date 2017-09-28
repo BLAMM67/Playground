@@ -35,11 +35,6 @@ recipes.addShaped(<xreliquary:mob_ingredient:11>,
   [<minecraft:ender_pearl>, <xreliquary:mob_ingredient:6>, <minecraft:ender_pearl>],
   [<minecraft:ender_pearl>, <minecraft:ender_pearl>, <minecraft:ender_pearl>]]);
 
-// Cook NetherEx netherrack
-furnace.addRecipe(<minecraft:netherbrick>, <nex:netherrack>);
-furnace.addRecipe(<minecraft:netherbrick>, <nex:netherrack:1>);
-furnace.addRecipe(<minecraft:netherbrick>, <nex:netherrack:2>);
-
 //Increase harvest level of nether randomite to cobalt
 HarvestLevel.set(<randomore:BlockRandomiteOreNether>, "pickaxe", 4);
 
